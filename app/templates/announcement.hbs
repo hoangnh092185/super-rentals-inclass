@@ -1,0 +1,14 @@
+<h2>Announcements</h2>
+<h3>Existing Announcements:</h3>
+
+<ul>
+  {{#each model as |announcement|}}
+    {{display-alert announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+  {{/each}}
+</ul>
+
+{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+{{#link-to 'index'}}Index.{{/link-to}}
