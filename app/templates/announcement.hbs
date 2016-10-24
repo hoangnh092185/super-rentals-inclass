@@ -1,14 +1,27 @@
-<h2>Announcements</h2>
-<h3>Existing Announcements:</h3>
+<div class="jumbotron">
+  <h2>Announcements</h2>
+</div>
 
-<ul>
-  {{#each model as |announcement|}}
-    {{display-alert announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
-  {{/each}}
-</ul>
+<div class="row">
+  <div class="col-xs-4 left">
+    <h4>{{#link-to 'index'}} Home {{/link-to}}</h4>
+  </div>
+  <div class="col-xs-4 center">
+    <h4>{{#link-to 'about'}}About{{/link-to}}</h4>
+  </div>
+  <div class="col-xs-4 right">
+    <h4>{{#link-to 'contact'}}Contact{{/link-to}}</h4>
+  </div>
+</div>
 
-{{new-announcement saveAnnouncement2="saveAnnouncement3"}}
+<div class="container">
+  <h3 >Existing Announcements:</h3>
+  <ul>
+    {{#each model as |announcement|}}
+      {{display-alert announcement=announcement destroyAnnouncement="destroyAnnouncement"}}
+    {{/each}}
+  </ul>
 
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
-{{#link-to 'index'}}Index.{{/link-to}}
+  {{new-announcement saveAnnouncement2="saveAnnouncement3"}}
+
+</div>

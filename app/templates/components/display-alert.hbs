@@ -1,6 +1,6 @@
 <div class="">
   <li>
-    {{announcement.text}}
+    <h4>{{announcement.text}}</h4>
+    <button {{action 'delete' announcement}}>Delete announcement</button>
   </li>
-  <button {{action 'delete' announcement}}>Delete announcement</button>
 </div>
