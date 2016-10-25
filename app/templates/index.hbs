@@ -19,11 +19,11 @@
     </div>
   </div>
 
-  <ul>
-    {{#each model as |rental|}}
-      {{rental-tile rental=rental}}
-    {{/each}}
-  </ul>
+    <ul>
+      {{#each model as |rental|}}
+         {{rental-tile rental=rental}}
+      {{/each}}
+    </ul>
 
   {{new-rental saveRental2="saveRental3"}}
 </div>
