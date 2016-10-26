@@ -21,5 +21,14 @@
 
   "announcements": [{
     "text": "This is a test of the emergency broadcast system."
-  }]
+  }],
+  "review": [{
+    "author": "Andrea",
+    "rating": 4,
+    "content": "Did not fall Down."
+    }, {
+      "author": "Alex",
+      "rating": 9,
+      "content": "Nice view of the volcano!"
+    }]
 }
